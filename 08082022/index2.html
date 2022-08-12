@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplyoo</title>
+</head>
+
+<body>
+    <h3>Định nghĩa một kiểu nhân viên mới là nhân viên bán thời gian, đặt tên class là ParttimeEmployee Nhân viên bán
+        thời gian có đặc điểm sau:Kế thừa toàn bộ các thuộc tính và phương thức của class EmployeeBổ sung phương thức
+        chấm công. Đầu vào là hai tham số: tháng chấm công và số giờ làm việc trong thángBổ sung thuộc tính: lương theo
+        giờ (hourly_wage)Ghi đè phương thức: get_salary() - Trả về lương hàng tháng theo công thức: lương = số giờ làm
+        việc của tháng hiện tại * lương theo giờGhi đè phương thức: get_annual_salary() - Trả về lương cả năm theo công
+        thức: lương năm = lương tháng 1 + lương tháng 2 + … + lương tháng 12Ghi đè phương thức raise_salary( percent ) –
+        Tăng lương theo giờ của nhân viên bán thời gian</h3>
+    <script>
+        class Emplyoo {
+            constructor(code, lastName, firstName, salary) {
+                this.code = code;
+                this.lastName = lastName;
+                this.firstName = firstName;
+                this.salary = salary;
+            }
+            getFullName() { return this.firstName + " " + this.lastName; }
+            getSalary() { return this.salary; }
+            getAnuaSalary() { return this.salary * 12; }
+            raiseSalary(percent) { this.salary += this.salary * percent / 100; }
+        }
+        console.log('--------------------------------------------------------')
+        class PartimeEmployee extends Employee {
+            contructer(code, lastName, firstName, salary)
+        }
+
+    </script>
+</body>
+
+</html>
