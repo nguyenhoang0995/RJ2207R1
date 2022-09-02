@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Headline from './Componets/Headline';
 
-<h1>nguyen nguyen hoang24091995</h1>
+<h1>nguyen nguyen hoan</h1>
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <p>Nguyễn Nguyên Hoàng2</p>
