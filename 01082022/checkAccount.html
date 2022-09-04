@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>checkEmail</title>
+    <title>checkAccount</title>
 </head>
 <body>
     <script>
-        let email1_1 = "ab@yahoo.com";
-        let email1_2 = "@#abc@gmail.com";
-        // console.log(is_mail(email1_1));
-        // console.log(is_mail(email1_2));
-        function is_mail(str){
-            regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        console.log(is_valid_account("123abc_"));
+        console.log(is_valid_account("12345"));
+        function is_valid_account(str){
+            regexp = /^[_a-z0-9]{6,}$/;
             if (regexp.test(str)){
                 return true;
             }else{
